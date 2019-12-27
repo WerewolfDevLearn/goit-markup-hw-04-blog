@@ -10,17 +10,13 @@
   --primary-font: 'Playfair Display', serif;
   --signature-font: 'Ubuntu', sans-serif;
 }
-body {
-  width: 1200px;
-}
-
-/* Navigation decoration */
+  /* Navigation decoration */
 .navigation {
   display: flex;
-  /* background-color: rgba(150, 132, 50, 0.5); */
   margin-top: 78px;
   margin-bottom: 58px;
   justify-content:center;
+  margin: auto;
 }
 .navigation-item {
   font-size: var(--text-size);
@@ -28,30 +24,29 @@ body {
   font-family: var(--primary-font);
   text-transform: uppercase;
   list-style-type: none;
-  display: block;
+  
   /* it was takken from mockup */
   width: 113px;
   height: 43px;
+  padding-top: 77px;
   padding-bottom: 31px;
-  /* background-color: rgba(100, 200, 100, 0.5); */
 }
 /* it was takken from mockup */
-.navigation-item:nth-child(1){
-  /* background-color: aqua; */
+.navigation-item:nth-child(1)
+{
   padding-right: 44px;
 }
-.navigation-item:nth-child(2){
-  /* background-color:chartreuse; */
+.navigation-item:nth-child(2)
+{
   padding-left: 44px;
   padding-right: 27px;
 }
-.navigation-item:nth-child(3){
-  /* background-color:green; */
+.navigation-item:nth-child(3)
+{
   padding-left: 27px;
   padding-right: 15px;
 }
 .navigation-item:nth-child(4){
-  /* background-color: aqua; */
   padding-left: 15px;
   padding-right: 0px;
 }
@@ -74,25 +69,37 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 900px;
-  /* background-color: rgba(120, 100, 60, 0.5); */
+  /* background-color: rgba(18, 4, 139, 0.5); */
 }
+
 .list-articles {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  
+}
+.list-articles-item:nth-child(2n)
+{
+  width: 419;
 }
 .list-articles-item {
   width: 420px;
   }
 .list-articles-item:not(:nth-child(2n)) 
 {
-  margin-right: 60px;
+ margin-right: 60px;
 }
+.list-articles-item:nth-child(5) .text, .list-articles-item:nth-child(6) .text
+ {
+ margin-bottom:59px; 
+}
+
 .main-article .signature {
   font-family: var(--signature-font);
   color: var(--artical-color);
   text-transform: uppercase;
+  margin-top: 31px;
+  margin-bottom: 31px;
 }
 .heading {
   /* color: var(--text-color); */
@@ -103,4 +110,16 @@ body {
   font-family: var(--primary-font);
   font-size: var(--button-text-size);
   line-height: var(--text-leading);
+  margin: auto;
+}
+.list-articles-item .heading{
+  margin-bottom: 42px;
+}
+.list-articles-item .text{
+  line-height: var(--text-leading);
+  margin-bottom: 144px;
+}
+.button{
+  text-align: center;
+  margin: auto;
 }
