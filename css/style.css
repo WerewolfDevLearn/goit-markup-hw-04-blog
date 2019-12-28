@@ -13,10 +13,11 @@
   /* Navigation decoration */
 .navigation {
   display: flex;
-  margin-top: 78px;
-  margin-bottom: 58px;
   justify-content:center;
-  margin: auto;
+  padding-top: 77px;
+  padding-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navigation-item {
   font-size: var(--text-size);
@@ -28,8 +29,7 @@
   /* it was takken from mockup */
   width: 113px;
   height: 43px;
-  padding-top: 77px;
-  padding-bottom: 31px;
+  
 }
 /* it was takken from mockup */
 .navigation-item:nth-child(1)
@@ -79,13 +79,10 @@
   flex-wrap: wrap;
   
 }
-.list-articles-item:nth-child(2n)
-{
-  width: 419;
-}
 .list-articles-item {
   width: 420px;
-  }
+}
+
 .list-articles-item:not(:nth-child(2n)) 
 {
  margin-right: 60px;
