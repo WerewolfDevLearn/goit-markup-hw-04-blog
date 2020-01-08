@@ -15,7 +15,6 @@
   display: flex;
   justify-content:center;
   padding-top: 77px;
-  padding-bottom: 31px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,6 +29,9 @@
   width: 113px;
   height: 43px;
   
+}
+.blog-header{
+  margin-bottom:102px ;
 }
 /* it was takken from mockup */
 .navigation-item:nth-child(1)
@@ -69,8 +71,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 900px;
-  margin-top: 71px;
-  /* background-color: rgba(18, 4, 139, 0.5); */
 }
 
 .list-articles {
@@ -81,13 +81,14 @@
 }
 .list-articles-item {
   width: 420px;
+  margin-bottom: 134px;
 }
 
 .list-articles-item:not(:nth-child(2n)) 
 {
  margin-right: 60px;
 }
-.list-articles-item:nth-child(5) .text, .list-articles-item:nth-child(6) .text
+.list-articles-item:nth-last-child(-n+2) 
  {
  margin-bottom:59px; 
 }
@@ -104,20 +105,34 @@
   font-size: var(--heading-text-size);
   font-weight: 400;
 }
-.more-info {
-  font-family: var(--primary-font);
-  font-size: var(--button-text-size);
-  line-height: var(--text-leading);
-  margin: auto;
-}
+
 .list-articles-item .heading{
   margin-bottom: 42px;
 }
 .list-articles-item .text{
   line-height: var(--text-leading);
-  margin-bottom: 144px;
+
 }
 .button{
-  text-align: center;
-  margin: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-color);
+  border:1px solid var(--text-color);
+  border-radius: 4px;
+  background-color: var(--white-color);
+  width: 165px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  font-family: var(--primary-font);
+  font-size: var(--button-text-size);
+  line-height: var(--text-leading);
+}
+.button:hover,
+.button:focus{
+  border-color: var(--accent-color);
+  background-color:var(--accent-colorolor);
 }
