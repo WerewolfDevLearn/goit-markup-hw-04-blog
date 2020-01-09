@@ -10,13 +10,34 @@
   --primary-font: 'Playfair Display', serif;
   --signature-font: 'Ubuntu', sans-serif;
 }
+/* general Styles */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+
+.container {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.blog-header{
+  margin-bottom:102px;
+  margin-top: 77px;
+  }
+
   /* Navigation decoration */
 .navigation {
   display: flex;
   justify-content:center;
-  padding-top: 77px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left:165px;
+  margin-right:165px;
 }
 .navigation-item {
   font-size: var(--text-size);
@@ -24,38 +45,17 @@
   font-family: var(--primary-font);
   text-transform: uppercase;
   list-style-type: none;
-  
-  /* it was takken from mockup */
-  width: 113px;
-  height: 43px;
-  
+}  
+.navigation-item:not(:last-child) {
+   margin-right:auto; 
 }
-.blog-header{
-  margin-bottom:102px ;
-}
-/* it was takken from mockup */
-.navigation-item:nth-child(1)
-{
-  padding-right: 44px;
-}
-.navigation-item:nth-child(2)
-{
-  padding-left: 44px;
-  padding-right: 27px;
-}
-.navigation-item:nth-child(3)
-{
-  padding-left: 27px;
-  padding-right: 15px;
-}
-.navigation-item:nth-child(4){
-  padding-left: 15px;
-  padding-right: 0px;
-}
+
 /* Link style and reaction */
 .navigation-link {
   color: var(--text-color);
   text-decoration: none;
+  display: block;
+  padding:0 40px;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -68,15 +68,16 @@
   font-family: var(--primary-font);
   font-size: var(--text-size);
   color: var(--text-color);
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
+  margin-bottom: 70px;
+
 }
 
 .list-articles {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom:59px;
+
   
 }
 .list-articles-item {
@@ -90,16 +91,19 @@
 }
 .list-articles-item:nth-last-child(-n+2) 
  {
- margin-bottom:59px; 
+  margin-bottom: 0px;
+}
+.image{
+  margin-bottom: 31px;
 }
 
 .main-article .signature {
   font-family: var(--signature-font);
   color: var(--artical-color);
   text-transform: uppercase;
-  margin-top: 31px;
   margin-bottom: 31px;
 }
+
 .heading {
   /* color: var(--text-color); */
   font-size: var(--heading-text-size);
@@ -126,13 +130,16 @@
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
   font-family: var(--primary-font);
   font-size: var(--button-text-size);
   line-height: var(--text-leading);
 }
 .button:hover,
 .button:focus{
+  color: var(--accent-color);
   border-color: var(--accent-color);
-  background-color:var(--accent-colorolor);
+  background-color:var(--white-color);
 }
+
+
+
